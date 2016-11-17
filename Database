@@ -1,3 +1,5 @@
+数据库名：pwspace
+
 Private_info
 --用于储存网站的私密信息，不给用户看的信息，例如总收入。
 Space_administer
@@ -15,4 +17,14 @@ Web_page_content
 不同字段：
 
 Private_info
---grose_income--服务器总收入，总共收了多少钱
+--grose_income--int(10)--服务器总收入，总共收了多少钱
+Space_administer
+--admin_id--int(3)--服务器管理员的id，用于分辨不同的管理员
+Space_type
+--space_id--int(5)--容器类型的id，用于分辨不同类型的容器
+Voucher_code
+--code_type--int(3)--邀请码id，用于分辨不同类型的邀请码
+Webspace_info
+--web_id--varchar(32)--容器id，由用户取名，不能重复，相当于用户名
+Web_page_content
+--Main_title--varchar(50)--网站主标题
